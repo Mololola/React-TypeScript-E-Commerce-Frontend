@@ -1,30 +1,66 @@
-# React + TypeScript + Vite
+# 🛍️ E-Commerce Frontend — React & TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic and responsive e-commerce frontend built with React and TypeScript, 
+bootstrapped with Vite. Built as a personal project to demonstrate frontend 
+development skills with modern tooling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Product Search** — live search with result count indicators
+- **Sorting & Filtering** — sort by price/name, filter by stock availability
+- **Shopping Basket** — add/remove items with real-time total cost calculation
+- **Responsive Design** — clean UI that works across screen sizes
+- **Type-safe** — fully typed with TypeScript throughout
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+`React` `TypeScript` `Vite` `CSS` `ESLint`
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (>=18.0.0)
+- npm
+
+### Run locally
+```bash
+# Clone the repo
+git clone https://github.com/Mololola/React-TypeScript-E-Commerce-Frontend.git
+
+cd React-TypeScript-E-Commerce-Frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Open `http://localhost:5173` in your browser.
+
+---
+
+## 📁 Project Structure
+```
+src/
+├── components/       # Reusable React components
+├── hooks/            # Custom React hooks
+├── types/            # TypeScript type definitions
+└── App.tsx           # Root component
+```
+
+---
+
+## 🔧 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server |
+| `npm run build` | Build for production |
+| `npm run lint` | Run ESLint |
